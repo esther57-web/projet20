@@ -1,0 +1,71 @@
+:root {
+    --LightCyan: hsl(193, 38%, 86%);
+    --NeonGreen: hsl(150, 100%, 66%);
+    --GrayishBlue: hsl(217, 19%, 38%);
+    --DarkGrayishBlue: hsl(217, 19%, 24%);
+    --DarkBlue: hsl(218, 23%, 16%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Manrope;
+    font-weight: 800;
+    text-align: center;
+}
+
+body {
+    background-color: var(--DarkBlue);
+}
+
+section {
+    background-color: var(--DarkGrayishBlue);
+    width: 90%;
+    margin: 8rem auto;
+    padding: 2rem 2rem 0 2rem;
+    border-radius: 10px;
+}
+
+h1 {
+    color: var(--NeonGreen);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+    letter-spacing: 5px;
+}
+
+p {
+    color: var(--LightCyan);
+    padding-bottom: 2rem;
+    font-size: 1.6rem;
+}
+
+picture, picture img {
+    width: 100%;
+}
+
+button {
+    background-color: var(--NeonGreen);
+    border: none;
+    padding: 1.25rem 1.25rem 1rem 1.25rem;
+    border-radius: 50%;
+    position: relative;
+    top: 2.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:active {
+    box-shadow: 5px 5px 5px hsl(150, 51%, 35%);
+}
+
+@media screen and (min-width: 800px) {
+    section {
+        width: 33%;
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+}
